@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Pocket GP</string>
+    <string name="nhs_111">NHS 111</string>
+    <string name="male">MALE</string>
+    <string name="female">FEMALE</string>
+    <string name="head_neck"><![CDATA[Head & Neck]]></string>
+    <string name="chest_back"><![CDATA[Chest & Back]]></string>
+    <string name="arms_hands"><![CDATA[Arms & Hands]]></string>
+    <string name="abdomen">Abdomen</string>
+    <string name="legs_feet"><![CDATA[Legs & Feet]]></string>
+    <string name="a">A</string>
+    <string name="b">B</string>
+    <string name="c">C</string>
+    <string name="d">D</string>
+    <string name="e">E</string>
+    <string name="f">F</string>
+    <string name="g">G</string>
+    <string name="h">H</string>
+    <string name="i">I</string>
+    <string name="j">J</string>
+    <string name="k">K</string>
+    <string name="l">L</string>
+    <string name="m">M</string>
+    <string name="n">N</string>
+    <string name="o">O</string>
+    <string name="p">P</string>
+    <string name="q">Q</string>
+    <string name="r">R</string>
+    <string name="s">S</string>
+    <string name="t">T</string>
+    <string name="u">U</string>
+    <string name="y">Y</string>
+    <string name="z">Z</string>
+    <string name="zeroNine">0-9</string>
+    <string name="v">V</string>
+    <string name="w">W</string>
+    <string name="x">X</string>
+    <string name="browse_by_index">Browse by Index</string>
+    <string name="commonConditions">Common Conditions</string>
+    <string name="quizzes_list">Quizes</string>
+    <string name="help_title"> - How to use this app - </string>
+    <string name="help_text">     Any articles of interest can be saved into your Library for offline viewing. Please use the save functionality in the top right hand corner of any article.\n\nServices Finder:\nSearch for GP, A E, or Dentist Services around you or by Post Code. Don\'t forget to save your local GP for quick access via the "My GP" button on the home screen.\n\nSymptom Checker:\nUse the Body Parts selector to quickly find more information about possible conditions. Please note the Symptom Checker offers advice on what to do or who to see next. It does not diagnose or replace medical advice.\n\nHealth A-Z:\nThis section provides information and advice on more than 800 conditions and treatments in an easy and comprehensive way. Top doctors and health professionals share their knowledge and advice, while patients give an insight into coping with particular conditions or procedures\n\nLive Well\nA lifestyle section that provides guides, tips and high-quality information on how to live a healthier life. Covering around numerous broad topic areas, there\'s always something new to find, with articles, videos and interactive tools being continually added.\n\nCommon Health Questions\nAnswers to topical and frequently asked health questions.\n\n Quizzes\nInteractive tools to help you live a healthy lifestyle ranging from BMI calculators to various self-assessment tools.\n\nCall NHS\nDials the NHS 111 Hotline\n\nMy GP\nQuickly access your saved local GP including quick dial and direction buttons.\n\nMy Library\nAccess all of your saved articles from across the app for quick reference or offline viewing.\n\nMisc.\nAll content provided by NHS Choices.\nWe encourage feedback and feature requests! Please use the dialog box above to let us know what works, what doesn\'t, and what you\'d like to see next.\n\nAlso, if you find this app useful, please leave a review on the store, we really appreciate it!</string>
+
+
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="backgroundHomePage">#007ac3</color>
+
+    <color name="buttonActiveColor">#007ac3</color>
+    <color name="buttonInactiveColor">#a2d7f9</color>
+
+    <color name="symptomCheckerButtonTextColorActive">#ffffff</color>
+    <color name="symptomCheckerButtonTextColorInactive">#73c6f7</color>
+    <color name="symptomCheckerButtonBackgroundColorActive">#007ac3</color>
+    <color name="symptomCheckerButtonBackgroundColorInactive">#ffffff</color>
+
+    <color name="white">#FFFFFFFF</color>
+    <color name="blueLineColor">#84d1ff</color>
+    <color name="black">#FF000000</color>
+
+    <color name="greenButtonColor">#2ECC71</color>
+
+    <color name="liveWellTitleColor">#636363</color>
+    <color name="liveWellSubheadTextColor">#00b000</color>
+    <color name="liveWellBodyTextColor">#007ac3</color>
+    <color name="blueTextColor">#007ac3</color>
+
+</resources>

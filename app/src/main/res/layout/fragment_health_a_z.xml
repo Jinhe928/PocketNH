@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:transitionGroup="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundHomePage"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_margin="0dp"
+            android:minHeight="56dp"
+            app:elevation="0dp">
+
+            <include layout="@layout/content_toolbar" />
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="0dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="56dp"
+
+        tools:context="com.pocketnhs.pocketnhsandroid.MainActivity">
+
+        <AutoCompleteTextView
+            android:id="@+id/search_conditions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="10%"
+            android:layout_margin="5dp"
+            android:padding="10dp"
+            android:background="@drawable/rounded_button_light_blue_border"
+            android:drawableRight="@drawable/ic_search_black_24dp"
+            android:hint="Enter Condition"
+            android:completionThreshold="2"
+            android:imeOptions="actionDone"
+            android:maxLines="1"
+             />
+
+
+        <TextView
+            android:id="@+id/browseByIndex"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/browse_by_index"
+            android:layout_below="@id/search_conditions"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/buttonActiveColor"
+            app:layout_heightPercent="6%"
+            app:layout_widthPercent="100%" />
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/buttonPanel"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@id/browseByIndex"
+            android:orientation="horizontal"
+            app:layout_heightPercent="36%"
+            app:layout_widthPercent="100%">
+
+            <Button
+                android:id="@+id/aButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:background="@drawable/inactive_letter_bg"
+                android:text="@string/a"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:layout_heightPercent="22%"
+                app:layout_widthPercent="13%" />
+
+            <Button
+                android:id="@+id/bButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_toEndOf="@id/aButton"
+                android:layout_toRightOf="@id/aButton"
+                android:background="@drawable/inactive_letter_bg"
+                android:text="@string/b"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:layout_heightPercent="22%"
+                app:layout_widthPercent="13%" />
+
+            <Button
+                android:id="@+id/cButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_toEndOf="@id/bButton"
+                android:layout_toRightOf="@id/bButton"
+                android:background="@drawable/inactive_letter_bg"
+                android:text="@string/c"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:layout_heightPercent="22%"
+                app:layout_widthPercent="13%" />
+
+            <Button
+                android:id="@+id/dButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_toEndOf="@id/cButton"
+                android:layout_toRightOf="@id/cButton"
+                android:background="@drawable/inactive_letter_bg"
+                android:text="@string/d"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:layout_heightPercent="22%"
+                app:layout_widthPercent="13%" />
+
+            <Button
+                android:id="@+id/eButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_toEndOf="@id/dButton"
+                android:layout_toRightOf="@id/dButton"
+                android:background="@drawable/inactive_letter_bg"
+                android:text="@string/e"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:layout_heightPercent="22%"
+                app:layout_widthPercent="13%" />
+
+            <Button
+                android:id="@+id/fButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_toEndOf="@id/eButton"
+                android:layout_toRightOf="@id/eButton"
+                android:background="@drawable/inactive_letter_bg"
+                android:text="@string/f"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:layout_heightPercent="22%"
+                app:layout_widthPercent="13%" />
+
+            <Button
+                android:id="@+id/gButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="2dp"
+                android:layout_toEndOf="@id/fButton"
+                android:layout_toRightOf="@id/fButton"
+                android:background="@drawable/inactive_letter_bg"
+                android:text="@string/g"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:layout_heightPercent="22%"
+                app:layout_widthPercent="13%" />
+
+            <Button
+                android:id="@+id/hButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aButton"
+                android:layout_margin="2dp"
+                android:background="@drawable/inactive_letter_bg"
+                android:text="@string/h"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:layout_heightPercent="22%"
+                app:layout_widthPercent="13%" />
+
+            <Button
+                android:id="@+id/iButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aButton"
+                android:layout_margin="2dp"
+                android:layout_toEndOf="@id/hButton"
+                android:layout_toRightOf="@id/hButton"
+                android:background="@drawable/inactive_letter_bg"
+                android:text="@string/i"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:layout_heightPercent="22%"
+                app:layout_widthPercent="13%" />
+
+            <Button
+                android:id="@+id/jButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aButton"
+                android:layout_margin="2dp"
+                android:layout_toEndOf="@id/iButton"
+                android:layout_toRightOf="@id/iButton"
+                android:background="@drawable/inactive_letter_bg"
+                android:text="@string/j"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:layout_heightPercent="22%"
+                app:layout_widthPercent="13%" />
+
+            <Button
+                android:id="@+id/kButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aButton"
+                android:layout_margin="2dp"
+                android:layout_toEndOf="@id/jButton"
+                android:layout_toRightOf="@id/jButton"
+                android:background="@drawable/inactive_letter_bg"
+                android:text="@string/k"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:layout_heightPercent="22%"
+                app:layout_widthPercent="13%" />
+
+            <Button
+                android:id="@+id/lButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aButton"
+                android:layout_margin="2dp"
+                android:layout_toEndOf="@id/kButton"
+                android:layout_toRightOf="@id/kButton"
+                android:background="@drawable/inactive_letter_bg"
+                android:text="@string/l"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:layout_heightPercent="22%"
+                app:layout_widthPercent="13%" />
+
+            <Button
+                android:id="@+id/mButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aButton"
+                android:layout_margin="2dp"
+                android:layout_toEndOf="@id/lButton"
+                android:layout_toRightOf="@id/lButton"
+                android:background="@drawable/inactive_letter_bg"
+                android:text="@string/m"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:layout_heightPercent="22%"
+                app:layout_widthPercent="13%" />
+
+            <Button
+                android:id="@+id/nButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/aButton"
+                android:layout_margin="2dp"
+                android:layout_toEndOf="@id/mButton"
+                android:layout_toRightOf="@id/mButton"
+                android:background="@drawable/inactive_letter_bg"
+                android:text="@string/n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:layout_heightPercent="22%"
+                app:layout_widthPercent="13%" />
+
+            <Button
+                android:id="@+id/oButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hButton"
+                android:layout_margin="2dp"
+                android:background="@drawable/inactive_letter_bg"
+                android:text="@string/o"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:layout_heightPercent="22%"
+                app:layout_widthPercent="13%" />
+
+            <Button
+                android:id="@+id/pButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hButton"
+                android:layout_margin="2dp"
+                android:layout_toEndOf="@id/oButton"
+                android:layout_toRightOf="@id/oButton"
+                android:background="@drawable/inactive_letter_bg"
+                android:text="@string/p"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:layout_heightPercent="22%"
+                app:layout_widthPercent="13%" />
+
+            <Button
+                android:id="@+id/qButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hButton"
+                android:layout_margin="2dp"
+                android:layout_toEndOf="@id/pButton"
+                android:layout_toRightOf="@id/pButton"
+                android:background="@drawable/inactive_letter_bg"
+                android:text="@string/q"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:layout_heightPercent="22%"
+                app:layout_widthPercent="13%" />
+
+            <Button
+                android:id="@+id/rButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hButton"
+                android:layout_margin="2dp"
+                android:layout_toEndOf="@id/qButton"
+                android:layout_toRightOf="@id/qButton"
+                android:background="@drawable/inactive_letter_bg"
+                android:text="@string/r"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:layout_heightPercent="22%"
+                app:layout_widthPercent="13%" />
+
+            <Button
+                android:id="@+id/sButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hButton"
+                android:layout_margin="2dp"
+                android:layout_toEndOf="@id/rButton"
+                android:layout_toRightOf="@id/rButton"
+                android:background="@drawable/inactive_letter_bg"
+                android:text="@string/s"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:layout_heightPercent="22%"
+                app:layout_widthPercent="13%" />
+
+            <Button
+                android:id="@+id/tButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hButton"
+                android:layout_margin="2dp"
+                android:layout_toEndOf="@id/sButton"
+                android:layout_toRightOf="@id/sButton"
+                android:background="@drawable/inactive_letter_bg"
+                android:text="@string/t"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:layout_heightPercent="22%"
+                app:layout_widthPercent="13%" />
+
+            <Button
+                android:id="@+id/uButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hButton"
+                android:layout_margin="2dp"
+                android:layout_toEndOf="@id/tButton"
+                android:layout_toRightOf="@id/tButton"
+                android:background="@drawable/inactive_letter_bg"
+                android:text="@string/u"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:layout_heightPercent="22%"
+                app:layout_widthPercent="13%" />
+
+            <Button
+                android:id="@+id/vButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/oButton"
+                android:layout_margin="2dp"
+                android:background="@drawable/inactive_letter_bg"
+                android:text="@string/v"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:layout_heightPercent="22%"
+                app:layout_widthPercent="13%" />
+
+            <Button
+                android:id="@+id/wButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/oButton"
+                android:layout_margin="2dp"
+                android:layout_toEndOf="@id/vButton"
+                android:layout_toRightOf="@id/vButton"
+                android:background="@drawable/inactive_letter_bg"
+                android:text="@string/w"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:layout_heightPercent="22%"
+                app:layout_widthPercent="13%" />
+
+            <Button
+                android:id="@+id/xButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/oButton"
+                android:layout_margin="2dp"
+                android:layout_toEndOf="@id/wButton"
+                android:layout_toRightOf="@id/wButton"
+                android:background="@drawable/inactive_letter_bg"
+                android:text="@string/x"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:layout_heightPercent="22%"
+                app:layout_widthPercent="13%" />
+
+            <Button
+                android:id="@+id/yButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/oButton"
+                android:layout_margin="2dp"
+                android:layout_toEndOf="@id/xButton"
+                android:layout_toRightOf="@id/xButton"
+                android:background="@drawable/inactive_letter_bg"
+                android:text="@string/y"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:layout_heightPercent="22%"
+                app:layout_widthPercent="13%" />
+
+            <Button
+                android:id="@+id/zButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/oButton"
+                android:layout_margin="2dp"
+                android:layout_toEndOf="@id/yButton"
+                android:layout_toRightOf="@id/yButton"
+                android:background="@drawable/inactive_letter_bg"
+                android:text="@string/z"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:layout_heightPercent="22%"
+                app:layout_widthPercent="13%" />
+
+            <Button
+                android:id="@+id/zeroNineButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/oButton"
+                android:layout_margin="2dp"
+                android:layout_toEndOf="@id/zButton"
+                android:layout_toRightOf="@id/zButton"
+                android:background="@drawable/inactive_letter_bg"
+                android:text="@string/zeroNine"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                app:layout_heightPercent="22%"
+                app:layout_widthPercent="13%" />
+
+
+        </android.support.percent.PercentRelativeLayout>
+
+
+        <TextView
+            android:id="@+id/commonConditions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonPanel"
+            android:text="@string/commonConditions"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/buttonActiveColor"
+            app:layout_heightPercent="6%"
+            app:layout_widthPercent="100%" />
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="34%"
+            android:layout_below="@id/commonConditions"
+            android:scrollbars="vertical" />
+
+        <android.widget.ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="8%"
+            android:elevation="6dp"
+            android:background="@color/white"
+            android:src="@drawable/nhs_choices_logo"
+            android:layout_below="@id/recycler_view"
+            />
+
+
+
+
+    </android.support.percent.PercentRelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
+
+

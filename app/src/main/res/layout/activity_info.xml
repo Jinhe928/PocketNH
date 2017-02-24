@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundHomePage"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_margin="0dp"
+            android:minHeight="56dp"
+            app:elevation="0dp">
+
+            <include layout="@layout/content_toolbar" />
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="70dp">
+
+        <android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/activity_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:background="@color/white"
+            android:gravity="center_horizontal"
+            tools:context="com.pocketnhs.pocketnhsandroid.InfoActivity">
+
+
+            <TextView
+                android:id="@+id/your_rating_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Rating"
+                android:textAlignment="center"
+                android:textColor="@color/blueTextColor"
+                android:textSize="18dp" />
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:id="@+id/rate_app_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/your_rating_label"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:padding="5dp"
+                    android:src="@drawable/rating_yellow_star" />
+
+                <ImageButton
+                    android:id="@+id/rate_app"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="5dp"
+                    android:background="@color/white"
+                    android:padding="0dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/submit_review_btn_blank" />
+
+
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <TextView
+                android:id="@+id/feature_request_label"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rate_app_ll"
+                android:text="Feedback/Feature requests"
+                android:textAlignment="center"
+                android:textColor="@color/blueTextColor"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/feedback_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/feature_request_label"
+                android:layout_margin="5dp"
+                android:background="@drawable/rounded_textbox"
+                android:padding="5dp"
+                app:layout_heightPercent="20%" />
+
+            <ImageButton
+                android:id="@+id/send_feedback"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/feedback_text"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:background="?attr/selectableItemBackground"
+                android:scaleType="centerInside"
+                android:src="@drawable/send_btn_blank" />
+
+            <ImageButton
+                android:id="@+id/remove_ads"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/send_feedback"
+                android:background="?attr/selectableItemBackground"
+                android:src="@drawable/remove_ads_bt_blank"
+                android:visibility="gone" />
+
+            <ImageButton
+                android:id="@+id/visit_nhs_website"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/remove_ads"
+                android:background="?attr/selectableItemBackground"
+                android:scaleType="centerInside"
+                android:src="@drawable/visit_nhs_website_btn_blank" />
+
+            <TextView
+                android:id="@+id/help_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/visit_nhs_website"
+                android:text="@string/help_title"
+                android:textAlignment="center"
+                android:textColor="@color/blueTextColor"
+                android:textSize="18dp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/help_title"
+                android:fillViewport="true">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/help_text"
+                    android:textColor="@color/blueTextColor"
+                    android:textSize="16dp" />
+            </ScrollView>
+        </android.support.percent.PercentRelativeLayout>
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>

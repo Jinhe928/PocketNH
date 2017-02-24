@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:clickable="true"
+    android:background="?android:attr/selectableItemBackground"
+
+    >
+
+    <TextView
+        android:id="@+id/linkText"
+        app:layout_widthPercent="90%"
+        android:textColor="@color/symptomCheckerButtonTextColorInactive"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_alignParentTop="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/chevron"
+        app:layout_widthPercent="10%"
+        android:layout_toEndOf="@id/linkText"
+        android:layout_toRightOf="@id/linkText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/chevron"/>
+    <ImageView
+        android:id="@+id/blueLineRecyclerView"
+        android:layout_below="@id/linkText"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/blueLineColor"/>
+
+</android.support.percent.PercentRelativeLayout>

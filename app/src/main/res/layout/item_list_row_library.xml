@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardUseCompatPadding="true"
+    card_view:cardCornerRadius="0dp">
+
+    <android.support.percent.PercentRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_border"
+        android:padding="2dp" >
+
+        <ImageView
+            android:id="@+id/itemImageType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="2dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/health_a_z_saved"
+            android:scaleX="0.7"
+            android:scaleY="0.7"
+            app:layout_widthPercent="20%"
+        app:layout_heightPercent="80%"/>
+
+
+        <TextView
+            android:id="@+id/itemTitle"
+            android:layout_toRightOf="@id/itemImageType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/liveWellTitleColor"
+            app:layout_heightPercent="100%"
+            app:layout_widthPercent="70%" />
+
+        <!--
+        <TextView
+            android:id="@+id/itemSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itemTitle"
+            android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+            android:textSize="12sp"
+            android:textColor="@color/liveWellBodyTextColor"
+            app:layout_heightPercent="80%"
+            app:layout_widthPercent="90%" />
+            -->
+
+        <ImageView
+
+            android:id="@+id/itemImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_toRightOf="@id/itemTitle"
+            android:src="@android:drawable/ic_delete"
+            android:scaleType="centerCrop"
+            app:layout_heightPercent="100%"/>
+
+
+
+    </android.support.percent.PercentRelativeLayout>
+</android.support.v7.widget.CardView>

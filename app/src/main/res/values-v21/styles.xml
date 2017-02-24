@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+        <style name="SubActivity" parent="AppTheme.NoActionBar">
+
+                <item name="android:windowContentTransitions">false</item>
+
+                <item name="android:windowEnterTransition">@android:transition/slide_right</item>
+                <item name="android:windowReturnTransition">@android:transition/slide_right</item>
+                <item name="android:windowExitTransition">@android:transition/slide_right</item>
+
+                <!--
+                <item name="android:windowAllowEnterTransitionOverlap">true</item>
+                <item name="android:windowAllowReturnTransitionOverlap">true</item>
+                <item name="android:windowSharedElementEnterTransition">@android:transition/move
+                </item>
+                <item name="android:windowSharedElementExitTransition">@android:transition/move
+                </item>
+                -->
+
+        </style>
+
+        <style name="SubActivity2" parent="AppTheme.NoActionBar">
+
+                <item name="android:windowContentTransitions">false</item>
+
+                <item name="android:windowEnterTransition">@transition/slide_bottom</item>
+                <item name="android:windowReturnTransition">@transition/slide_bottom</item>
+                <item name="android:windowExitTransition">@transition/slide_bottom</item>
+
+                <!--
+                <item name="android:windowAllowEnterTransitionOverlap">true</item>
+                <item name="android:windowAllowReturnTransitionOverlap">true</item>
+                <item name="android:windowSharedElementEnterTransition">@android:transition/move
+                </item>
+                <item name="android:windowSharedElementExitTransition">@android:transition/move
+                </item>
+                -->
+
+        </style>
+
+
+        <style name="MainActivity" parent="AppTheme.NoActionBar">
+
+                <item name="android:windowContentTransitions">false</item>
+
+                <item name="android:windowEnterTransition">@android:transition/slide_left</item>
+
+
+<!--
+                <item name="android:windowAllowEnterTransitionOverlap">true</item>
+                <item name="android:windowAllowReturnTransitionOverlap">true</item>
+                <item name="android:windowSharedElementEnterTransition">@android:transition/move
+                </item>
+                <item name="android:windowSharedElementExitTransition">@android:transition/move
+                </item>
+                -->
+
+        </style>
+</resources>

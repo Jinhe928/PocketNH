@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pocketnhs.pocketnhsandroid">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATIONS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+
+    <application
+        android:name=".globals.ApplicationState"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBiSVpBODdxQp0AFDC7ce_6mlMv-XCtbHY" />
+
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".server.GeocoderService"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".QuizView"
+            android:screenOrientation="portrait"
+            android:theme="@style/SubActivity" />
+        <activity
+            android:name=".SymptomCheckerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SubActivity" />
+        <activity
+            android:name=".SymptomCheckerGenderConditionsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SubActivity" />
+        <activity
+            android:name=".HealthAZActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SubActivity"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".LiveWellActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SubActivity" />
+        <activity
+            android:name=".SymptomCheckerBodySubPartsArrayActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SubActivity" />
+        <activity
+            android:name=".LiveWellWebViewArticleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SubActivity" />
+        <activity
+            android:name=".ServicesFinderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SubActivity" />
+        <activity
+            android:name=".QuizzesListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SubActivity" />
+        <activity
+            android:name=".offline_library.MyGPActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SubActivity" />
+        <activity
+            android:name=".offline_library.MyLibraryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SubActivity" />
+        <activity
+            android:name=".ShowConditionItemDetails"
+            android:screenOrientation="portrait"
+            android:theme="@style/SubActivity" />
+        <activity
+            android:name=".ShowGenderConditionItemDetails"
+            android:screenOrientation="portrait"
+            android:theme="@style/SubActivity" />
+        <activity
+            android:name=".InfoActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustNothing"
+            android:theme="@style/SubActivity" />
+        <activity
+            android:name=".CommonHealthQuestionsActivity_Depth1"
+            android:screenOrientation="portrait"
+            android:theme="@style/SubActivity" />
+        <activity
+            android:name=".offline_library.ShowGPActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SubActivity2" />
+        <activity
+            android:name=".offline_library.ShowMyLibArticleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SubActivity" />
+        <activity
+            android:name=".CommonHealthQuestionsSubCategoryActivity_Depth2"
+            android:screenOrientation="portrait"
+            android:theme="@style/SubActivity" />
+        <activity
+            android:name=".CommonHealthQuestionsDetailsActivity_Depth3"
+            android:screenOrientation="portrait"
+            android:theme="@style/SubActivity" />
+        <activity
+            android:name=".ArticleWebView"
+            android:screenOrientation="portrait"
+            android:theme="@style/SubActivity" />
+        <activity
+            android:name=".CommonHQDetailsTextActivity_Depth4"
+            android:screenOrientation="portrait"
+            android:theme="@style/SubActivity" />
+
+        <activity android:name=".CommonHQShowArticleActivity_Depth5"
+            android:screenOrientation="portrait"
+            android:theme="@style/SubActivity"
+            />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:transitionGroup="true"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/backgroundHomePage"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:layout_margin="0dp"
+            android:minHeight="56dp"
+            app:elevation="0dp">
+
+            <include layout="@layout/content_toolbar" />
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="0dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_top_padding"
+        tools:context="com.pocketnhs.pocketnhsandroid.MainActivity">
+
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/buttonPanel"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            app:layout_heightPercent="6%"
+            app:layout_widthPercent="100%">
+
+            <Button
+                android:id="@+id/maleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="@string/male"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@drawable/button_text_color"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="50%" />
+
+            <Button
+                android:id="@+id/femaleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/maleButton"
+                android:layout_toRightOf="@id/maleButton"
+                android:background="@android:color/transparent"
+                android:text="@string/female"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@drawable/button_text_color"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="50%" />
+        </android.support.percent.PercentRelativeLayout>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/bodyButtonPanel"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@id/buttonPanel"
+            android:orientation="horizontal"
+            app:layout_heightPercent="47%"
+            app:layout_widthPercent="100%">
+
+            <ImageView
+                android:id="@+id/maleBodyView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:src="@drawable/male"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="50%" />
+
+            <ImageView
+                android:id="@+id/femaleBodyView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/maleBodyView"
+                android:layout_toRightOf="@id/maleBodyView"
+                android:src="@drawable/female"
+                app:layout_heightPercent="100%"
+                app:layout_widthPercent="50%" />
+        </android.support.percent.PercentRelativeLayout>
+
+
+        <Button
+            android:id="@+id/head_neck"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@id/bodyButtonPanel"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal"
+            android:text="@string/head_neck"
+            android:textColor="@drawable/symptom_checker_button_text_color"
+            app:layout_heightPercent="8%"
+            app:layout_widthPercent="100%"/>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/blue_line_panel1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@id/head_neck"
+            android:background="@color/blueLineColor"
+            android:orientation="horizontal"
+            app:layout_heightPercent="0.1%"
+            app:layout_widthPercent="100%"/>
+
+        <Button
+            android:id="@+id/chest_back"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@id/blue_line_panel1"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal"
+            android:text="@string/chest_back"
+            android:textColor="@drawable/symptom_checker_button_text_color"
+            app:layout_heightPercent="8%"
+            app:layout_widthPercent="100%"/>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/blue_line_panel2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@id/chest_back"
+            android:background="@color/blueLineColor"
+            android:orientation="horizontal"
+            app:layout_heightPercent="0.1%"
+            app:layout_widthPercent="100%"/>
+
+        <Button
+            android:id="@+id/arms_hands"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@id/blue_line_panel2"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal"
+            android:text="@string/arms_hands"
+            android:textColor="@drawable/symptom_checker_button_text_color"
+            app:layout_heightPercent="8%"
+            app:layout_widthPercent="100%"/>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/blue_line_panel3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@id/arms_hands"
+            android:background="@color/blueLineColor"
+            android:orientation="horizontal"
+            app:layout_heightPercent="0.1%"
+            app:layout_widthPercent="100%"/>
+
+        <Button
+            android:id="@+id/abdomen"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@id/blue_line_panel3"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal"
+            android:text="@string/abdomen"
+            android:textColor="@drawable/symptom_checker_button_text_color"
+            app:layout_heightPercent="8%"
+            app:layout_widthPercent="100%"/>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/blue_line_panel4"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@id/abdomen"
+            android:background="@color/blueLineColor"
+            android:orientation="horizontal"
+            app:layout_heightPercent="0.1%"
+            app:layout_widthPercent="100%"/>
+
+        <Button
+            android:id="@+id/legs_feet"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@id/blue_line_panel4"
+            android:background="@android:color/transparent"
+            android:orientation="horizontal"
+            android:text="@string/legs_feet"
+            android:textColor="@drawable/symptom_checker_button_text_color"
+            app:layout_heightPercent="8%"
+            app:layout_widthPercent="100%"/>
+
+        <android.support.percent.PercentRelativeLayout
+            android:id="@+id/blue_line_panel5"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_below="@id/legs_feet"
+            android:background="@color/blueLineColor"
+            android:orientation="horizontal"
+            app:layout_heightPercent="0.1%"
+            app:layout_widthPercent="100%"/>
+
+        <android.widget.ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_heightPercent="8%"
+            android:elevation="6dp"
+            android:background="@color/white"
+            android:src="@drawable/nhs_choices_logo"
+            android:layout_below="@id/blue_line_panel5"
+            />
+
+
+    </android.support.percent.PercentRelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
+
